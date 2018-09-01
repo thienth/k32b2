@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form>
+		text
+		<input type="text" placeholder="Ho va ten" value="tran huu thien">
+		<br>
+		mat khau
+		<input type="password">
+		<br>
+		số
+		<input type="number" step="0.2" max="20" min="0">
+		<br>
+		ngay thang nam
+		<input type="date">
+		<br>
+		mau sac
+		<input type="color">
+		<br>
+		khoang
+		<input type="range" min="0" max="100">
+		<br>
+		checkbox
+		<input type="checkbox" />
+		<br>
+		radio
+		<input type="radio" name="gender"> Nam
+		<input type="radio" name="gender"> Nu
+		<input type="radio" name="gender"> Gay
+		<input type="radio" name="gender"> Les
+		<input type="radio" name="gender"> Other
+		<br>
+		<textarea rows="10" cols="50"></textarea>
+		<br>
+		ngay
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+		</select>
+		thang
+		<select>
+			<option>Thang 1</option>
+			<option>Thang 2</option>
+			<option>Thang 3</option>
+			<option>Thang 4</option>
+			<option>Thang 5</option>
+			<option>Thang 6</option>
+		</select>
+		nam
+		<select>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+			<option>2003</option>
+			<option>2004</option>
+		</select>
+		<br>
+		<button type="button">Luu</button>
+	</form>
+
+
+	<script>
+		// alert(349857345 + 23462354);
+		var so = prompt('vui long nhap so bat ky');
+
+		var ketqua = so%2;
+		if(ketqua == 0){
+			alert('ban vua nhap so chan');
+		}else{
+			alert('ban vua nhap so le')
+		}
+
+	</script>
+</body>
+</html>
