@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// lay du lieu
+		var soA = prompt('Nhap canh A');
+		var soB = prompt('Nhap canh B');
+		var soC = prompt('Nhap canh C');
+
+		// ép chuỗi về số
+		soA = Number(soA);
+		soB = Number(soB);
+		soC = Number(soC);
+
+		// tao bien max
+		var max = soA;
+		// kiem tra voi so B
+		if(max < soB){
+			max = soB;
+		}
+
+		// kiem tra voi so C
+		if(max < soC){
+			max = soC;
+		}
+
+		alert("so lon nhat trong 3 so la: " + max);
+	</script>
+</body>
+</html>

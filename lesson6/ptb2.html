@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// lay du lieu
+		var soA = prompt('Nhap canh A');
+		var soB = prompt('Nhap canh B');
+		var soC = prompt('Nhap canh C');
+
+		// ép chuỗi về số
+		soA = Number(soA);
+		soB = Number(soB);
+		soC = Number(soC);
+
+		// tinh delta
+		var delta = soB*soB - (4*soA*soC);
+
+		// kiem tra deltal > 0
+		if(delta > 0 ){
+			// tinh x1
+			var x1 = (-soB + Math.sqrt(delta))/(2*soA);
+			// tinh x2
+			var x2 = (-soB - Math.sqrt(delta))/(2*soA);
+			// hien thi
+			alert("Phuong trinh co 2 nghiem phan biet ");
+			alert("x1 = " + x1);
+			alert("x2 = " + x2);
+		} else if(delta == 0){
+			// tinh x
+			var x = -soB/(2*soA);
+			// hien thi
+			alert("Phuong trinh co nghiem kep");
+			alert("x = " + x);
+		} else {
+			// hien thi vo nghiem
+			alert("Phuong trinh vo nghiem");
+		}
+	</script>
+</body>
+</html>

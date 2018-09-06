@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// lay du lieu
+		var soA = prompt('Nhap canh A');
+		var soB = prompt('Nhap canh B');
+		var soC = prompt('Nhap canh C');
+
+		// ép chuỗi về số
+		soA = Number(soA);
+		soB = Number(soB);
+		soC = Number(soC);
+
+		// kiem tra co phai la tam giac hay khong
+		if(soA+soB > soC && soA+soC > soB && soB+soC > soA){
+			alert('day la tam giac');
+
+			// tinh chu vi
+			var chuvi = soA+soB+soC;
+			alert('chu vi tam giac = ' + chuvi);
+
+			// tinh dien tich
+			var p = chuvi/2;
+			var dientich = Math.sqrt(p*(p-soA)*(p-soB)*(p-soC));
+
+			alert('dien tich tam giac = ' + dientich);
+		}else{
+			alert('khong phai la tam giac');
+		}
+	</script>
+
+</body>
+</html>
