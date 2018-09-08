@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		// lay du lieu
+		var soA = prompt('Nhap canh A');
+		var soB = prompt('Nhap canh B');
+		var soC = prompt('Nhap canh C');
+
+		// ép chuỗi về số
+		soA = Number(soA);
+		soB = Number(soB);
+		soC = Number(soC);
+
+		// tinh tong cua 2 so sau do gan cho bien
+		var ab = soA + soB;
+		var ac = soA + soC;
+		var bc = soB + soC;
+
+		// tao bien max
+		var max = ab;
+
+		// so sanh max voi ac
+		if(ac > max){
+			max = ac;
+		}
+
+		// so sanh max voi bc
+		if(bc > max){
+			max = bc;
+		}
+
+
+		// hien thi gia tri tong lon nhat
+		alert('Tong lon nhat = ' + max);
+		
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	nhap muc luong cua 1 nguoi la so bat ky,
+	neu luong duoi 9tr thi khong mat thue,
+	neu luong trong khoang 9 - 15 => dong thue 5% (so luong - 9)
+	neu luong trong khoang 15 - 30 tr 
+	=> dong thue = 5% (15-9) + 10% (luong - 15)
+	neu luong > 30tr 
+	=> dong thue = 5% (15-9) + 10% (30 - 15) + 15% (luong - 30)
+
+	-------------------------------
+	1. nhap luong
+	2. ep kieu
+
+	3. luong > 30
+		thue = (15 * (luong - 30))/100 + (10 * 15)/100 + (5 * 6)/100 
+	4. luong <= 30 && luong >15
+		thue = (10 * (luong - 15))/100 + (5 * 6)/100 
+	5. luong <= 15 & luong > 9
+		thue = (5 * (luong -9))/100 
+	6. luong <= 9 
+		thue = 0
+	7. hien thi
+
+	<script type="text/javascript">
+		var luong = prompt("nhap luong cua ban");
+		luong = Number(luong);
+
+		var thue = 0;
+		if(luong > 30){
+			thue = (15 * (luong - 30))/100 + (10 * 15)/100 + (5 * 6)/100 ;
+		}
+
+		if(luong <= 30 && luong > 15){
+			thue = (10 * (luong - 15))/100 + (5 * 6)/100;
+		}
+
+		if(luong >9 && luong <=15){
+			thue = (5 * (luong -9))/100;
+		}
+
+		alert('So tien thue ban phai dong = ' + thue);
+	</script>
+
+</body>
+</html>
