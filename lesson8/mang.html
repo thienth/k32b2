@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	tao 1 mang gom 10 phan tu random trong khoang 0 -> 100
+	tim so lon nhat trong mang => hien thi ra ngoai
+	đếm số phần tử là số lẻ trong mảng
+	tính tổng 2 phần tử lớn nhất trong mảng
+<script type="text/javascript">
+	var arr = [];
+	var max = 0;
+	for (var i = 0; i < 10; i++) {
+		var ran = Math.round(Math.random()*100);
+		if(max < ran){
+			max = ran;
+		}
+		arr.push(ran);
+	}
+
+	console.log(arr);
+	console.log(max);
+</script>
+</body>
+</html>

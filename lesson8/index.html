@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	// tim so nguyen am co trong chuoi bat ky
+	<script type="text/javascript">
+		var str = prompt('Nhap chuoi bat ky');
+		var count = 0;
+
+		var amU = 0;
+		var amE = 0;
+		var amO = 0;
+		var amA = 0;
+		var amI = 0;
+
+		for (var i = 0; i < str.length; i++) {
+			if(str[i] == 'u'
+				|| str[i] == 'e'
+				|| str[i] == 'o'
+				|| str[i] == 'a'
+				|| str[i] == 'i'){
+				count++;
+				if(str[i] == 'u'){
+					amU++;
+				}
+				if(str[i] == 'e'){
+					amE++;
+				}
+				if(str[i] == 'o'){
+					amO++;
+				}
+				if(str[i] == 'a'){
+					amA++;
+				}
+				if(str[i] == 'i'){
+					amI++;
+				}
+			}
+		}
+		alert(`Có tất cả ${count} nguyên âm,
+			u = ${amU}, e = ${amE}, o = ${amO}, a = ${amA}, i = ${amI}`)
+	</script>
+</body>
+</html>

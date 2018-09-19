@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<button onclick="getGender()">Click me!</button>
+<script type="text/javascript">
+	// ham so
+	var str = 'visit t3h t3h t3h t3h!!!!!!';
+	while(str.indexOf('t3h') != -1){
+		str = str.replace('t3h', '');
+	}
+
+	console.log(str);
+
+
+
+
+	function getGender(){
+		var gender = prompt('Vui long nhap gioi tinh cua ban');
+
+		gender = gender.toLowerCase();
+		if(gender == 'nam' || gender == 'male'){
+			alert('Ban that dep trai');
+		}else if(gender == 'nu' || gender == 'female'){
+			alert('ban that xau gai');
+		}else{
+			alert('ban thuoc the gioi thu 3');
+		}
+	}
+
+	// getGender();
+
+
+
+	//  Dinh nghia ham  
+	function tinhTongPtuCuaMang(mang){
+		var tong = 0;
+		for (var i = 0; i < mang.length; i++) {
+			tong += a[i];
+		}
+
+		return tong*2;
+	}
+	var a = [1,3,4,5,6,7,88,9];
+	// goi ham
+	var tongA = tinhTongPtuCuaMang(a);
+	// alert(tongA);
+
+
+	var b = [0,4,2,68,8,5,3];
+	var tongB = tinhTongPtuCuaMang(b);
+	// alert(tongB);
+</script>
+</body>
+</html>

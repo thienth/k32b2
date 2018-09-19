@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// b1
+		/*var str = prompt('nhap chuoi');
+		var count = 0;
+		for (var i = 0; i < str.length; i++) {
+			if(str[i] === " "){
+				count++;
+			}
+		}
+
+		alert(`Trong chuỗi có tất cả ${count} khoảng trắng`);*/
+		// b2
+		/*var str = prompt('nhap chuoi');
+		var str = str.trim();
+
+		console.log(str);*/
+		// b3
+		/*var str1 = prompt('nhap chuoi 1');
+		var str2 = prompt('nhap chuoi 2');
+		alert(str1+str2);*/
+		// b4
+		/*var str2 = prompt('nhap chuoi');
+		alert(str2.toLowerCase());
+		alert(str2.toUpperCase());*/
+
+		//b6
+		/*var str = prompt('nhap chuoi').trim();
+
+		var arr = str.split(" ");
+		console.log(arr);
+		var strKq = "";
+		for (var i = 0; i < arr.length; i++) {
+			var firstChar = arr[i][0].toUpperCase();
+			strKq += firstChar + arr[i].slice(1, arr[i].length+1) + " ";
+		}
+		strKq = strKq.trim();
+
+		console.log(strKq);*/
+		//b7
+		/*var str = prompt('nhap chuoi').trim();
+
+		var kq = "";
+		for (var i = 0; i < str.length; i++) {
+			if(str[i] == " "){
+				kq+=str[i];
+				continue;
+			}else{
+				if(i%2==0){
+					kq+=str[i].toUpperCase();
+				}else{
+					kq+=str[i].toLowerCase();
+				}
+			}
+		}
+
+		alert(kq);*/
+		// b8
+		/*var str = prompt('nhap chuoi').trim();
+		var arr1 = str.split("");
+		var arr2 = arr1.reverse();
+		var strKq = arr2.join('');
+		alert(strKq);*/
+
+
+		var str = prompt('nhap chuoi goc').trim();
+		var str2 = prompt('nhap chuoi can tim').trim();
+		var arr = str.split(' ');
+		var checked = -1;
+		for (var i = 0; i < arr.length; i++) {
+			if(arr[i].indexOf(str2) != -1){
+				checked = i;
+				break;
+			}
+		}
+
+		if(checked == -1){
+			alert(`Ký tự ${str2} không xuất hiện trong chuỗi gốc`);
+		}else{
+			alert(`Ký tự ${str2} xuất hiện tại từ thứ ${checked+1} trong chuỗi gốc "${str}"`);
+		}
+	</script>
+</body>
+</html>
